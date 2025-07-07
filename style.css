@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background: linear-gradient(180deg, #7af6ee, #eafffe); /* Gradiente linear de 180 graus */
+    font-family: 'Nunito Sans', sans-serif; /* Fonte padrão para textos */
+    line-height: 1.6;
+    color: #000000; /* Cor das fontes */
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Título principal - Jersey 10 */
+h1 {
+    font-family: 'Jersey 10', cursive; /* Fonte Jersey 10 */
+    color: #000000;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* Parágrafo - Nunito Sans */
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+/* Subtítulos - Nunito Sans Bold */
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700; /* Bold */
+    color: #000000;
+    margin: 40px 0 20px 0;
+    font-size: 1.5em;
+}
+
+/* Listas - estilo geral */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+/* Imagens dentro das listas */
+ul li img {
+    margin-top: 10px;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Lista de hobbies */
+.hobbies-lista {
+    margin-bottom: 40px;
+}
+
+/* Lista de países */
+.paises-lista {
+    margin-bottom: 40px;
+}
+
+/* Site de interesse */
+.site-interesse {
+    margin-bottom: 40px;
+}
+
+.site-interesse li {
+    list-style-type: disc;
+}
+
+/* Links */
+a {
+    color: #000000;
+    text-decoration: underline;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #333333;
+}
+
+/* Botão */
+button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Mensagem do botão */
+.mensagem-oculta {
+    display: none;
+}
+
+.mensagem-visivel {
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 300px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    ul li img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
